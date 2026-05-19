@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Autoescola Líder - Segue a Líder | Cascavel/PR</title>
+  <meta name="description" content="Autoescola Líder - Centro de Formação de Condutores em Cascavel/PR. Habilitação categorias A, B, D, E e Renovação. Instrutores experientes e frota moderna.">
+  <meta name="keywords" content="autoescola cascavel, habilitação cascavel, CNH, carteira de motorista, autoescola líder">
+  <link rel="icon" type="image/png" href="assets/imagens/favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600;9..40,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER ========== -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo">
+        <img src="assets/imagens/logo.png" alt="Autoescola Líder" class="logo-img">
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="index.html" class="active">Home</a>
+        <a href="pages/sobre.html">Sobre</a>
+        <a href="pages/imagens.html">Imagens</a>
+        <div class="nav-dropdown">
+          <a href="#" class="nav-dropdown-toggle">
+            Habilitações
+            <svg width="12" height="12" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <div class="nav-dropdown-menu">
+            <a href="pages/categoria-a.html">
+              <span>
+                <strong>Categoria A</strong>
+                <small>Moto</small>
+              </span>
+            </a>
+            <a href="pages/categoria-b.html">
+              <span>
+                <strong>Categoria B</strong>
+                <small>Carro</small>
+              </span>
+            </a>
+            <a href="pages/categoria-d.html">
+              <span>
+                <strong>Categoria D</strong>
+                <small>Micro-ônibus</small>
+              </span>
+            </a>
+            <a href="pages/categoria-e.html">
+              <span>
+                <strong>Categoria E</strong>
+                <small>Carreta</small>
+              </span>
+            </a>
+            <div class="dropdown-divider"></div>
+            <a href="pages/renovacao.html">
+              <span>
+                <strong>Renovação</strong>
+                <small>Renove sua CNH</small>
+              </span>
+            </a>
+          </div>
+        </div>
+        <a href="pages/frota.html">Frota</a>
+        <a href="pages/contato.html">Contato</a>
+      </nav>
+
+      <div class="header-actions">
+        <a href="https://wa.me/5545998334100?text=Olá! Vi o site e gostaria de mais informações." class="btn-whatsapp-header" target="_blank">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+          <span>WhatsApp</span>
+        </a>
+        <button class="hamburger" id="hamburger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== MOBILE NAV ========== -->
+  <div class="mobile-nav-overlay" id="mobileOverlay"></div>
+  <div class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <img src="assets/imagens/logo.png" alt="Autoescola Líder" class="mobile-logo">
+      <button class="mobile-close" id="mobileClose" aria-label="Fechar">
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+      </button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="pages/sobre.html">Sobre</a>
+      <a href="pages/imagens.html">Imagens</a>
+      <div class="mobile-accordion">
+        <button class="mobile-accordion-toggle">
+          Habilitações
+          <svg width="16" height="16" viewBox="0 0 12 12" fill="none"><path d="M3 4.5L6 7.5L9 4.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+        <div class="mobile-accordion-content">
+          <a href="pages/categoria-a.html">Categoria A - Moto</a>
+          <a href="pages/categoria-b.html">Categoria B - Carro</a>
+          <a href="pages/categoria-d.html">Categoria D - Micro-ônibus</a>
+          <a href="pages/categoria-e.html">Categoria E - Carreta</a>
+          <a href="pages/renovacao.html">Renovação de CNH</a>
+        </div>
+      </div>
+      <a href="pages/frota.html">Frota</a>
+      <a href="pages/contato.html">Contato</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <a href="https://wa.me/5545998334100?text=Olá! Vi o site e gostaria de mais informações." class="btn btn-whatsapp-full" target="_blank">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Fale Conosco pelo WhatsApp
+      </a>
+      <a href="tel:4533068083" class="btn btn-outline-mobile">
+        (45) 3306-8083
+      </a>
+    </div>
+  </div>
+
+  <!-- ========== HERO ========== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <img src="assets/imagens/hero-bg.jpg" alt="Autoescola Líder Cascavel">
+    </div>
+    <div class="container hero-inner">
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="badge-dot"></span>
+          Centro de Formação de Condutores
+        </div>
+        <h1>Conquiste sua <span class="text-gradient">liberdade</span> na estrada</h1>
+        <p class="hero-subtitle">Instrutores experientes, frota moderna e o melhor atendimento de Cascavel. Sua habilitação começa aqui na Autoescola Líder.</p>
+        <div class="hero-ctas">
+          <a href="https://wa.me/5545998334100?text=Olá! Gostaria de informações sobre habilitação." class="btn btn-primary btn-lg" target="_blank">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            Matricule-se Agora
+          </a>
+          <a href="#categorias" class="btn btn-ghost btn-lg">
+            Ver Categorias
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M4 6L8 10L12 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+          </a>
+        </div>
+        <div class="hero-stats">
+          <div class="stat">
+            <strong>15+</strong>
+            <span>Anos de Experiência</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>5.000+</strong>
+            <span>Alunos Formados</span>
+          </div>
+          <div class="stat-divider"></div>
+          <div class="stat">
+            <strong>4.9</strong>
+            <span>Avaliação Google</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== DESTAQUES ========== -->
+  <section class="features">
+    <div class="container">
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="assets/icones/instrutor.svg" alt="Instrutores">
+          </div>
+          <h3>Instrutores Experientes</h3>
+          <p>Profissionais formados de acordo com as exigências do código de trânsito brasileiro e portarias do DETRAN.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="assets/icones/veiculo.svg" alt="Veículos">
+          </div>
+          <h3>Veículos Novos</h3>
+          <p>Frota sempre atualizada para seu conforto e melhor aprendizado durante as aulas práticas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="assets/icones/pagamento.svg" alt="Pagamento">
+          </div>
+          <h3>Facilidade no Pagamento</h3>
+          <p>Aceitamos cartões de crédito e débito. Parcelamos para facilitar sua habilitação.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">
+            <img src="assets/icones/localizacao.svg" alt="Localização">
+          </div>
+          <h3>Localização Privilegiada</h3>
+          <p>Fácil acesso na Av. Brasil, 8767 - Coqueiral, esquina com Flamboyant, Cascavel/PR.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CATEGORIAS ========== -->
+  <section class="categorias" id="categorias">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossos Cursos</span>
+        <h2>Escolha sua <span class="text-gradient">categoria</span></h2>
+        <p>Nossa escola de formação de condutores oferece os melhores cursos com aulas teóricas e práticas completas.</p>
+      </div>
+      <div class="categorias-grid">
+        <a href="pages/categoria-a.html" class="categoria-card">
+          <div class="categoria-visual">
+            <img src="assets/imagens/categoria-a.png" alt="Categoria A - Moto">
+            <div class="categoria-badge">A</div>
+          </div>
+          <div class="categoria-info">
+            <h3>Categoria A</h3>
+            <p>Veículos motorizados de duas ou três rodas, com ou sem carro lateral.</p>
+            <span class="categoria-link">
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+        <a href="pages/categoria-b.html" class="categoria-card">
+          <div class="categoria-visual">
+            <img src="assets/imagens/categoria-b.png" alt="Categoria B - Carro">
+            <div class="categoria-badge">B</div>
+          </div>
+          <div class="categoria-info">
+            <h3>Categoria B</h3>
+            <p>Veículos cujo peso bruto não exceda 3.500kg ou lotação de até 8 lugares.</p>
+            <span class="categoria-link">
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+        <a href="pages/categoria-d.html" class="categoria-card">
+          <div class="categoria-visual">
+            <img src="assets/imagens/categoria-d.png" alt="Categoria D - Micro-ônibus">
+            <div class="categoria-badge">D</div>
+          </div>
+          <div class="categoria-info">
+            <h3>Categoria D</h3>
+            <p>Veículos de transporte de passageiros com lotação acima de 8 pessoas.</p>
+            <span class="categoria-link">
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+        <a href="pages/categoria-e.html" class="categoria-card">
+          <div class="categoria-visual">
+            <img src="assets/imagens/categoria-e.png" alt="Categoria E - Carreta">
+            <div class="categoria-badge">E</div>
+          </div>
+          <div class="categoria-info">
+            <h3>Categoria E</h3>
+            <p>Combinação de veículos com mais de uma unidade tracionada.</p>
+            <span class="categoria-link">
+              Saiba mais
+              <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8H13M13 8L9 4M13 8L9 12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </span>
+          </div>
+        </a>
+      </div>
+      <div class="categorias-cta">
+        <a href="pages/renovacao.html" class="btn btn-outline btn-lg">
+          Precisa Renovar sua CNH? Clique Aqui
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CTA SECTION ========== -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-card">
+        <div class="cta-content">
+          <h2>Conquiste sua liberdade.</h2>
+          <p>Tire sua habilitação com quem entende do assunto. Fale com um de nossos atendentes e garanta já sua matrícula.</p>
+          <div class="cta-buttons">
+            <a href="https://wa.me/5545998334100?text=Olá! Gostaria de fazer minha matrícula." class="btn btn-whatsapp btn-lg" target="_blank">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+              Falar no WhatsApp
+            </a>
+            <a href="tel:4533068083" class="btn btn-white btn-lg">
+              (45) 3306-8083
+            </a>
+          </div>
+        </div>
+        <div class="cta-image">
+          <img src="assets/imagens/conquiste-liberdade.png" alt="Conquiste sua liberdade">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== ESTRUTURA / GALERIA ========== -->
+  <section class="estrutura">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Nossa Estrutura</span>
+        <h2>Conheça nosso <span class="text-gradient">espaço</span></h2>
+        <p>Veja algumas imagens da estrutura da Autoescola Líder.</p>
+      </div>
+      <div class="gallery-grid">
+        <div class="gallery-item"><img src="assets/imagens/estrutura-01.jpg" alt="Estrutura Autoescola Líder" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/imagens/estrutura-02.jpg" alt="Estrutura Autoescola Líder" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/imagens/estrutura-03.jpg" alt="Estrutura Autoescola Líder" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/imagens/estrutura-04.jpg" alt="Estrutura Autoescola Líder" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/imagens/estrutura-05.jpg" alt="Estrutura Autoescola Líder" loading="lazy"></div>
+        <div class="gallery-item"><img src="assets/imagens/estrutura-06.jpg" alt="Estrutura Autoescola Líder" loading="lazy"></div>
+      </div>
+      <div class="text-center" style="margin-top:40px;">
+        <a href="pages/imagens.html" class="btn btn-outline btn-lg">Ver Mais Imagens</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== COMO FUNCIONA ========== -->
+  <section class="como-funciona">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Passo a Passo</span>
+        <h2>Como tirar sua <span class="text-gradient">habilitação</span></h2>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <div class="step-number">01</div>
+          <h3>Matrícula</h3>
+          <p>Entre em contato pelo WhatsApp ou venha até nossa sede com seus documentos.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="2"><line x1="0" y1="1" x2="40" y2="1" stroke="var(--orange)" stroke-width="2" stroke-dasharray="4"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">02</div>
+          <h3>Aulas Teóricas</h3>
+          <p>Complete as aulas teóricas obrigatórias com nossos instrutores qualificados.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="2"><line x1="0" y1="1" x2="40" y2="1" stroke="var(--orange)" stroke-width="2" stroke-dasharray="4"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">03</div>
+          <h3>Aulas Práticas</h3>
+          <p>Treine com nossos veículos modernos e instrutores experientes.</p>
+        </div>
+        <div class="step-connector">
+          <svg width="40" height="2"><line x1="0" y1="1" x2="40" y2="1" stroke="var(--orange)" stroke-width="2" stroke-dasharray="4"/></svg>
+        </div>
+        <div class="step-card">
+          <div class="step-number">04</div>
+          <h3>Aprovação!</h3>
+          <p>Faça a prova e conquiste sua CNH. Estamos com você em cada etapa!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FORMULÁRIO DE CONTATO ========== -->
+  <section class="contato-section" id="contato">
+    <div class="container">
+      <div class="contato-grid">
+        <div class="contato-info">
+          <span class="section-tag">Fale Conosco</span>
+          <h2>Tire suas <span class="text-gradient">dúvidas</span></h2>
+          <p>Preencha o formulário ou entre em contato diretamente pelos nossos canais de atendimento.</p>
+          <div class="contato-channels">
+            <div class="channel">
+              <div class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+              <div>
+                <strong>Telefone</strong>
+                <a href="tel:4533068083">(45) 3306-8083</a>
+              </div>
+            </div>
+            <div class="channel">
+              <div class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg></div>
+              <div>
+                <strong>WhatsApp</strong>
+                <a href="https://wa.me/5545998334100" target="_blank">(45) 9 9833-4100</a>
+              </div>
+            </div>
+            <div class="channel">
+              <div class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg></div>
+              <div>
+                <strong>E-mail</strong>
+                <a href="mailto:contato@autoescolalider10.com.br">contato@autoescolalider10.com.br</a>
+              </div>
+            </div>
+            <div class="channel">
+              <div class="channel-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg></div>
+              <div>
+                <strong>Endereço</strong>
+                <span>Av. Brasil, 8767 - Coqueiral<br>Cascavel - Paraná</span>
+              </div>
+            </div>
+          </div>
+          <div class="horarios">
+            <strong>Horário de Atendimento:</strong>
+            <p>Segunda a Sexta: 08:00 às 19:00<br>Sábado: 08:00 às 13:30</p>
+          </div>
+        </div>
+        <div class="contato-form-wrapper">
+          <form class="contato-form" id="contatoForm">
+            <h3>Solicite Informações</h3>
+            <div class="form-group">
+              <label for="nome">Nome Completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefone">Telefone / WhatsApp</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="(45) 9 0000-0000" required>
+              </div>
+              <div class="form-group">
+                <label for="email">E-mail</label>
+                <input type="email" id="email" name="email" placeholder="seu@email.com">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="categoria">Categoria de Interesse</label>
+              <select id="categoria" name="categoria">
+                <option value="">Selecione...</option>
+                <option value="A">Categoria A - Moto</option>
+                <option value="B">Categoria B - Carro</option>
+                <option value="AB">Categoria A/B - Moto e Carro</option>
+                <option value="D">Categoria D - Micro-ônibus</option>
+                <option value="E">Categoria E - Carreta</option>
+                <option value="renovacao">Renovação de CNH</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem (opcional)</label>
+              <textarea id="mensagem" name="mensagem" rows="3" placeholder="Conte-nos como podemos ajudar..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg btn-full">Enviar Mensagem</button>
+            <p class="form-disclaimer">Ao enviar, você concorda em receber nosso contato.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== MAPA ========== -->
+  <section class="mapa-section">
+    <div class="container">
+      <div class="mapa-wrapper">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3620.123!2d-53.458!3d-24.955!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDU3JzE4LjAiUyA1M8KwMjcnMjguOCJX!5e0!3m2!1spt-BR!2sbr!4v1" width="100%" height="400" style="border:0;border-radius:16px;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/imagens/logo.png" alt="Autoescola Líder" class="footer-logo">
+          <p>Centro de Formação de Condutores. Sua habilitação começa aqui.</p>
+          <div class="footer-social">
+            <a href="https://wa.me/5545998334100" target="_blank" aria-label="WhatsApp" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+            </a>
+            <a href="https://web.facebook.com/autoescolalidercascavel/" target="_blank" aria-label="Facebook" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            </a>
+            <a href="https://www.instagram.com/autoescolalider10/" target="_blank" aria-label="Instagram" class="social-link">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>Navegação</h4>
+          <a href="index.html">Home</a>
+          <a href="pages/sobre.html">Sobre</a>
+          <a href="pages/imagens.html">Imagens</a>
+          <a href="pages/frota.html">Frota</a>
+          <a href="pages/contato.html">Contato</a>
+        </div>
+        <div class="footer-links">
+          <h4>Habilitações</h4>
+          <a href="pages/categoria-a.html">Categoria A - Moto</a>
+          <a href="pages/categoria-b.html">Categoria B - Carro</a>
+          <a href="pages/categoria-d.html">Categoria D - Micro-ônibus</a>
+          <a href="pages/categoria-e.html">Categoria E - Carreta</a>
+          <a href="pages/renovacao.html">Renovação de CNH</a>
+        </div>
+        <div class="footer-links">
+          <h4>Contato</h4>
+          <a href="tel:4533068083">(45) 3306-8083</a>
+          <a href="https://wa.me/5545998334100" target="_blank">(45) 9 9833-4100</a>
+          <a href="mailto:contato@autoescolalider10.com.br">contato@autoescolalider10.com.br</a>
+          <span>Av. Brasil, 8767 - Coqueiral, Cascavel/PR</span>
+          <div class="footer-horario">
+            <strong>Atendimento:</strong><br>
+            Seg-Sex: 08h às 19h<br>
+            Sábado: 08h às 13:30h
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Autoescola Líder - Todos os direitos reservados</p>
+        <a href="#" class="btn-back-top" id="btnBackTop" aria-label="Voltar ao topo">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+          Voltar ao topo
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========== WHATSAPP FLOAT ========== -->
+  <a href="https://wa.me/5545998334100?text=Olá! Vi o site e gostaria de mais informações." class="whatsapp-float" target="_blank" aria-label="WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="white"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-float-text">Atendimento</span>
+  </a>
+
+  <!-- ========== LIGHTBOX MODAL ========== -->
+  <div class="lightbox-overlay" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Fechar">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M18 6L6 18M6 6l12 12"/></svg>
+    </button>
+    <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="lightbox-content">
+      <img src="" alt="" id="lightboxImg">
+    </div>
+    <button class="lightbox-next" id="lightboxNext" aria-label="Próxima">
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+    <div class="lightbox-counter" id="lightboxCounter"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
